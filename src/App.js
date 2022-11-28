@@ -5,7 +5,7 @@ import Setting from "./components/Setting";
 import { useEffect, useState } from "react";
 import io from "socket.io-client";
 
-const socket = io.connect("http://localhost:5555");
+const socket = io.connect("https://task7-server-production.up.railway.app/");
 
 function App() {
   const [currentUser, setCurrentUser] = useState("");
